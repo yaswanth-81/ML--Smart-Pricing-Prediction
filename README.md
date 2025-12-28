@@ -104,7 +104,7 @@ ml-pricing-challenge/
 
 Please download all files from the Google Drive link and place them in their respective directories:
 
-**📎 Download Link:** [Google Drive - Model & Feature Files](**https://drive.google.com/drive/folders/1NKWFMHqcYGpRnIYjXIqIHE0XVy59kmkr?usp=drive_link**)
+**📎 Download Link:** [Google Drive - Model & Feature Files](https://drive.google.com/drive/folders/1NKWFMHqcYGpRnIYjXIqIHE0XVy59kmkr?usp=drive_link)
 
 The Google Drive link contains all the following files organized in their respective directories:
 
