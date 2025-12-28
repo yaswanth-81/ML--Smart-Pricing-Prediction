@@ -98,34 +98,52 @@ ml-pricing-challenge/
 
 ## 📥 Required Files
 
-**⚠️ Important:** The following preprocessed model files and features are required to run inference. These files are large and should be downloaded separately.
+**⚠️ Important:** The following preprocessed model files, features, and datasets are required to run inference and training. These files are large and should be downloaded separately.
 
 ### Download Required Files
 
-Please download the following files from the Google Drive link and place them in their respective directories:
+Please download all files from the Google Drive link and place them in their respective directories:
 
 **📎 Download Link:** [Google Drive - Model & Feature Files](**YOUR_DRIVE_LINK_HERE**)
 
+The Google Drive link contains all the following files organized in their respective directories:
+
 ### Files to Download:
+
+#### For Dataset (`dataset/` directory):
+- `train.csv` - Training dataset with product information and prices
+- `test.csv` - Test dataset for predictions
+- `sample_test.csv` - Sample test dataset
 
 #### For Training (`features/` directory):
 - `hybrid_model_trained.h5` (40.8 MB) - Trained hybrid model weights
 - `train_img_features.npy` (751 MB) - Preprocessed training image features
-- `X_train_tfidf.pkl` (61.2 MB) - Training text TF-IDF features
-- `brand_encoder.pkl` (1 KB) - Brand label encoder
-
-#### For Testing (`features/` directory):
 - `test_img_features.npy` (1 MB) - Preprocessed test image features
+- `X_train_tfidf.pkl` (61.2 MB) - Training text TF-IDF features
+- `X_test_tfidf.pkl` (61.3 MB) - Test text TF-IDF features
+- `brand_encoder.pkl` (1 KB) - Brand label encoder
+- `train_features.csv` - Processed training features
+- `test_features.csv` - Processed test features
+- `train_img_ids.csv` - Training image ID mappings
+- `test_img_ids.csv` - Test image ID mappings
 
 #### For Combined Features (`features_combined/` directory):
 - `image_features.npy` (501 KB) - Combined image features
 - `text_tfidf.pkl` (63 KB) - Combined text TF-IDF features
 - `tfidf_vectorizer.pkl` (33 KB) - TF-IDF vectorizer model
-- `X_test_tfidf.pkl` (61.3 MB) - Test text TF-IDF features (if needed)
+- `metadata.csv` - Metadata for combined features
+- `image_ids.csv` - Image ID mappings for combined features
 
 ### Directory Setup After Download:
 
+After downloading from Google Drive, your directories should be organized as follows:
+
 ```
+dataset/
+├── train.csv
+├── test.csv
+└── sample_test.csv
+
 features/
 ├── hybrid_model_trained.h5
 ├── train_img_features.npy
@@ -145,6 +163,8 @@ features_combined/
 ├── metadata.csv
 └── image_ids.csv
 ```
+
+**Note:** All CSV files (datasets and feature CSVs) are included in the Google Drive link along with the model and feature files.
 
 ## 🚀 Usage
 
